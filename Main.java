@@ -1,33 +1,18 @@
 
 /**
- * Write a description of class Main here.
+ * class Main
  *
  * @Maulidis
  * @version 1.1
  */
-public class Main
-{
-    // instance variables - replace the example below with your own
-    private int x;
+*/public class Main{
 
-    /**
-     * Constructor for objects of class Main
-     */
-    public Main()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+    public static void main(String args[]){
+        // menciptakan objek baru dari class Calculator
+        Calculator kalkul = new Calculator();
+        // menciptakan objek baru dari class kalkulator
+        kalkulator kalkul = new kalkulator();
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        kalkul.name = "Operator ";
     }
 }
