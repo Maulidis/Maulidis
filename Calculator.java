@@ -1,7 +1,7 @@
 /**
- * class Calculator
+ * Write a description of class Calculator here.
  *
- * @author Maulidis 
+ * @author Maulidis
  * @version 0.1
  */
 public class Calculator
@@ -97,9 +97,10 @@ public class Calculator
         this.op2 = op2;
         return jumlah();
     }
+
     public double kurang()
     {
-        return this.op1- this.op2;
+        return this.op1 - this.op2;
     }
      /**
      * kurang dengan parameter
@@ -115,41 +116,41 @@ public class Calculator
         this.op2 = op2;
         return this.op1- this.op2;
     }
-    public double perkalian()
+    public double kali()
     {
-        return this.op1* this.op2;
+        return this.op1 * this.op2;
     }
      /**
-     * perkalian dengan parameter
+     * kali dengan parameter
      *
      * @param  double op1
      *         double op2
      * @return double hasil perkalian op1 * op2
      */
 
-     public double perkalian(double op1, double op2) 
+     public double kali(double op1, double op2) 
     {
         this.op1 = op1;
         this.op2 = op2;
-        return this.op1* this.op2;
+        return this.op1 * this.op2;
     }
-    public double pembagian()
+    public double bagi()
     {
-        return this.op1/ this.op2;
+        return this.op1 / this.op2;
     }
      /**
-     * pembagian dengan parameter
+     * bagi dengan parameter
      *
      * @param  double op1
      *         double op2
-     * @return double hasil pembagian op1 / op2
+     * @return double hasil pembagian op1 \op2
      */
 
-     public double pembagian(double op1, double op2) 
+     public double bagi(double op1, double op2) 
     {
         this.op1 = op1;
         this.op2 = op2;
-        return this.op1/ this.op2;
+        return this.op1 /this.op2;
     }
 
-}
+} 
