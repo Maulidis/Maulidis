@@ -1,1 +1,0 @@
-[Alt text](https://github.com/Maulidis/Maulidis.Kalkulator/blob/master/sc4.jpg)
