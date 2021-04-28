@@ -1,6 +1,5 @@
-import java.lang.Math;
 /**
- * Abstract class CalculatorTrigonometri 
+ * Abstract class CalculatorTrigonometri - write a description of the class here
  *
  * @author Maulidis
  * @version 0.1
@@ -8,6 +7,7 @@ import java.lang.Math;
 public abstract class CalculatorTrigonometri extends Calculator
 {
     protected double sudut;
+   
    public abstract void konversi(double sudut);
    
    public double sin()
@@ -18,12 +18,11 @@ public abstract class CalculatorTrigonometri extends Calculator
    public double cos()
    {
        return Math.cos(this.sudut);
+       
     }
-   // tan
-   public double tan()
-   {
-       return Math.tan(this.sudut);
+    public double tan()
+    {
+        return Math.tan(this.sudut);
     }
-
    
 }

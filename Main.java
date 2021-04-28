@@ -1,5 +1,5 @@
 /**
- * Write a description of class Main here.
+ * class Main 
  *
  * @author Maulidis
  * @version 0.1
@@ -9,70 +9,107 @@ public class Main
     public static void main(String args[])
     {
        System.out.println(Calculator.info);
-
-       Calculator calculator1 = new Calculator();
-       Calculator calculator4 = new Calculator();
-       Calculator calculator2 = new Calculator(4,7);
-       Calculator calculator3 = new Calculator(5);
-
+       
+    Calculator calculator1 = new Calculator();
+    Calculator calculator4 = new Calculator();
+    Calculator calculator2 = new Calculator(3,5);
+    Calculator calculator3 = new Calculator(3);
+       
        System.out.println("Nilai awal setelah konstruktor dipanggil");
-       System.out.println("Nilai op2 Constructor tanpa parameter : " +calculator1.op2);
-       System.out.println("Nilai op2 Constructor dengan 2 parameter : " +calculator2.op2);
-       System.out.println("Nilai op2 Constructor dengan 3 parameter : " +calculator3.op2);
-
-       System.out.println("Nilai op1 Constructor tanpa parameter : " +calculator1.getOp1());
-       System.out.println("Nilai op1 Constructor dengan 2 parameter : " +calculator2.getOp1());
-       System.out.println("Nilai op1 Constructor dengan 3 parameter : " +calculator3.getOp1());
-
-       System.out.println(" ");
+       System.out.println("Nilai op2 Constructor tanpa parameter: "+calculator1.op2);
+       System.out.println("Nilai op2 Constructor dengan 2 parameter: "+calculator2.op2);
+       System.out.println("Nilai op2 Constructor dengan 3 parameter: "+calculator3.op2);
+       
+       System.out.println("Nilai op1 Constructor tanpa parameter: "+calculator1.getOp1());
+       System.out.println("Nilai op1 Constructor dengan 2 parameter: "+calculator2.getOp1());
+       System.out.println("Nilai op1 Constructor dengan 3 parameter: "+calculator3.getOp1());
+        
+       System.out.println("");
        System.out.println(Calculator.jumlahobject);
-
-       System.out.println(" ");
+       
+       System.out.println("");
        double hasil1 = calculator1.jumlah();
-       double hasil2 = calculator1.jumlah(5.2 , 7.2);
-       System.out.println("Hasil penjumlahan method jumlah tanpa parameter : " + hasil1);
-       System.out.println("Hasil penjumlahan method jumlah dengan parameter : " + hasil2);
-
-       System.out.println(" ");
+       double hasil2 = calculator1.jumlah(20, 4);
+       System.out.println("Hasil penjumlahan method jumlah tanpa parameter: "+ hasil1);
+       System.out.println("Hasil penjumlahan method jumlah dengan parameter: "+ hasil2);
+       
+       System.out.println("");
        double kurang1 = calculator1.kurang();
-       double kurang2 = calculator1.kurang(8.2,  7.2 );
-       System.out.println("Hasil pengurangan method kurang tanpa parameter :  " + kurang1);
-       System.out.println("Hasil pengurangan  method kurang dengan parameter :  " + kurang2);
-
+       double kurang2 = calculator1.kurang(20, 4);
+       System.out.println("Hasil pengurangan method kurang tanpa parameter:  " + kurang1);
+       System.out.println("Hasil pengurangan  method kurang dengan parameter:  "+ kurang2);
+       
        System.out.println("");
-       double kali1 = calculator1.kali();
-       double kali2 = calculator1.kali(5.2,  7.2 );
-       System.out.println("Hasil perkalian method kali tanpa parameter :  " + kali1);
-       System.out.println("Hasil peekalian  method kali dengan parameter :  " + kali2);
-
-
+       double perkalian1 = calculator1.perkalian();
+       double perkalian2 = calculator1.perkalian(20, 4);
+       System.out.println("Hasil perkalian method kali tanpa parameter:  " + perkalian1);
+       System.out.println("Hasil perkalian  method kali dengan parameter:  "+ perkalian2);
+       
        System.out.println("");
-       double bagi1 = calculator1.bagi();
-       double bagi2 = calculator1.bagi(5.2,  7.2  );
-       System.out.println("Hasil pembagian method bagi tanpa parameter :  " + bagi1);
-       System.out.println("Hasil pembagian method bagi dengan parameter :  " + bagi2);
-
-
-
-       CalculatorProgrammer clp = new CalculatorProgrammer();
+       double pembagian1 = calculator1.pembagian();
+       double pembagian2 = calculator1.pembagian(20, 4);
+       System.out.println("Hasil pembagian method bagi tanpa parameter:  " + pembagian1);
+       System.out.println("Hasil pembagian  method bagi dengan parameter:  "+ pembagian2);
+       
+    
+       CalculatorProgremmer clp = new CalculatorProgremmer();
        System.out.println(" \n CalculatorProgrammer");
-       System.out.println("Bentuk Biner dari Desimal " + " :" + Integer.toBinaryString(5));
-       System.out.println("Bentuk Hex dari Desimal " + " :" + Integer.toHexString(5));
+       System.out.println("Bentuk Biner dari Desimal " + " :"+ Integer.toBinaryString(10));
+       System.out.println("Bentuk Hex dari Desimal " + " :"+ Integer.toHexString(10));
 
-
-      Calculatorscientific cs = new Calculatorscientific();
-      System.out.println(" \n Calculatorscientific :" );
-      System.out.println("Faktorial dari 6! adalah :" + cs. menghitungFaktorial(10));
+    
+      CalculatorScientific cs = new CalculatorScientific();
+      System.out.println(" \n CalculatorScientific");
+      System.out.println("Faktorial dari 5! adalah :" + cs. menghitungFaktorial(10));
       System.out.println("luas lingkarannya adalah :" + cs.luas());
-      System.out.println("luas Bujur sangkar adalah :" + cs.bujurSangkar(9));CalculatorTrigonometri  clr = new CalculatorTriRadian();
+      System.out.println("luas Bujur sangkar adalah :" + cs.bujurSangkar(20));
       
-      CalculatorTrigonometri  cln = new CalculatorTriRadian();
-      CalculatorTrigonometri  cld = new CalculatorTriDegree();
-      System.out.println(" \n CalculatorTrigonometri ");
-      System.out.println("Nilai dari sin 30 adalah"+ Math.sin(50));
-      System.out.println("Nilai dari Cos 90 adalah"+ Math.cos(10));
-      System.out.println("Nilai dari tan 60 adalah"+ Math.tan(80));
-      System.out.println("Nilai dari derajat sudut untuk PI/6 adalah " + Math.toDegrees(Math.PI/6) + " derajat");  
-      System.out.println("Nilai dari sudut radian untuk sudut 30 derajat adalah " + Math.toRadians(50));  
-}
+      CalculatorTrigonometri clr = new CalculatorTriRadian();
+      CalculatorTrigonometri cld = new CalculatorTriDegree();
+      
+      System.out.println(" \n CalculatorTrigonometri");
+      System.out.println("Nilai dari sin adalah :" + Math.sin(220));
+      System.out.println("Nilai dari cos adalah :" + Math.cos(280));
+      System.out.println("Nilai dari tan adalah :" + Math.tan(60));
+      System.out.println("Nilai dari sudut derajat sudut untuk PI/3 adalah" + Math.toDegrees(Math.PI/3) + " derajat");
+      System.out.println("Nilai dari sudut radian untuk sudut 120 derajat adalah " + Math.toRadians(220));
+    
+      
+      Kalkulator cl = new Kalkulator();
+      //SimpanOperasiCalculator  spr = new SimpanOperasikeMemoryReverse();
+      SimpanOperasiCalculator  spr = new SimpanOperasikeMemoryForward();
+      
+      cl.setSimpanOperasi(spr);
+      
+      cl.op1 = 1;
+      cl.op2 = 1;
+      System.out.println("");
+      System.out.println("1 + 1 = "+ cl.jumlah());
+      //System.out.println("1 x 1 = "+ cl.kali());
+      //System.out.println("1 - 1 = "+ cl.kurang());
+      //System.out.println("1 / 1 = "+ cl.bagi());
+      
+      cl.op1 = 2;
+      cl.op2 = 2;
+      System.out.println("");
+      System.out.println("8 + 8 = "+ cl.jumlah());
+      //System.out.println("2 x 2 = "+ cl.kali());
+      //System.out.println("2 - 2 = "+ cl.kurang());
+      //System.out.println("2 / 2 = "+ cl.bagi());
+      
+      cl.op1 = 3;
+      cl.op2 = 3;
+      System.out.println("");
+      System.out.println("9 + 9 = "+ cl.jumlah());
+      //System.out.println("3 x 3 = "+ cl.kali());
+      //System.out.println("3 - 3 = "+ cl.kurang());
+      //System.out.println("3 / 3 = "+ cl.bagi());
+      
+      System.out.println("Data dari memori: ");
+      
+      System.out.println(cl.bacaOperasi());
+       
+       
+    
+    }
 }

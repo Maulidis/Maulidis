@@ -1,5 +1,5 @@
 /**
- * Write a description of class CalculatorTriRadian here.
+ * class CalculatorTriRadian here.
  *
  * @author Maulidis
  * @version 0.1
@@ -11,7 +11,7 @@ public class CalculatorTriRadian extends CalculatorTrigonometri
      */
     public CalculatorTriRadian()
     {
-        
+
     }
 
     /**

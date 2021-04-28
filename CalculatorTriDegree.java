@@ -1,6 +1,5 @@
-import java.lang.Math;
 /**
- *class CalculatorTridegree
+ * class CalcuatorTriDegree here.
  *
  * @author Maulidis
  * @version 0.1
@@ -12,7 +11,7 @@ public  class CalculatorTriDegree extends CalculatorTrigonometri
      */
     public CalculatorTriDegree()
     {
-       
+
     }
     /**
      * konversi
